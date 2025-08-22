@@ -1,8 +1,11 @@
 /* Загальний хедер */
 .header {
   background-color: #e84fc4;
-  position: relative;
-  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   overflow: hidden;
 }
 
@@ -100,6 +103,9 @@
   color: #1c1c1c;
   gap: 16px;
 }
+.header-link-mobile:hover {
+  color: #fcb825;
+}
 @media screen and (min-width: 1200px) {
   .header-mobile-wrapper,
   .mobile-menu {
@@ -129,6 +135,7 @@
     justify-content: center;
     align-items: center;
     list-style: none;
+    padding: 0px 79px;
     gap: 17px;
     flex-wrap: wrap;
   }
@@ -139,11 +146,13 @@
     font-size: 20px;
     line-height: 1;
     color: #fff;
-    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
   }
 
   .header-link:hover {
-    color: #ffe600;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px #db19a9;
+    color: #ffda8b;
   }
 
   .header-logo {
@@ -157,106 +166,3 @@
     height: auto;
   }
 }
-
-/* .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: #ef6dc8;
-}
-.header-wrapper {
-  display: none;
-}
-.header::after {
-  content: '';
-  display: block;
-  height: 20px;
-  background: #db19a9;
-  border-radius: 0 0 50% 50%;
-  margin-top: -10px;
-}
-.header-mobile-wrapper {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60px;
-  padding: 0 16px;
-} */
-
-/* Логотип по центру */
-/* .header-logo-mobile {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-} */
-
-/* Бургер справа */
-/* .header-burger-btn {
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  cursor: pointer;
-} */
-
-/* SVG стилізація */
-/* .header-icon-btn {
-  fill: white;
-}
-.mobile-menu {
-  display: none;
-}
-.header-mobile-nav {
-  display: block;
-}
-.header-list-mobile {
-}
-.header-link-mobile {
-} */
-/* @media screen and (min-width: 768px) { */
-/* .header {
-    padding: 24px 79px;
-    text-align: center;
-    color: white;
-  }
-.header-wrapper {
-display: flex;
-}
-  .header::after {
-    content: '';
-    display: block;
-    height: 20px;
-    background: #db19a9;
-    border-radius: 0 0 50% 50%;
-    margin-top: -10px;
-  }
-
-  .header-list {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-  }
-
-  .header-link {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-  .logo-header {
-    margin-right: 30px;
-    margin-left: 30px;
-  }
-} */
