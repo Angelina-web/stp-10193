@@ -1,33 +1,71 @@
 <header class="header">
   <div class="container">
-    <div class="wrapper">
-      <nav class="nav">
-        <a class="nav-logo" href="./index.html" aria-label="Site logo">
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="{=$icon-path}"></use>
-          </svg>
-        </a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+    <div class="header-wrapper">
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li><a href="./index.html" class="header-link ">Home</a></li>
+          <li><a href="#overview" class="header-link ">Game Overview</a></li>
+          <li><a href="#gameplay" class="header-link ">Gameplay Features</a></li>
+          <li class="header-logo">
+            <picture>
+              <source srcset="
+                            ../img/logo/logo-desk.png 1x,
+                            ../img/logo/logo-desk2x.png 2x
+                          " media="(min-width: 1200px)" />
+              <a href="./index.html">
+                <img src="../img/logo/logo-desk.png" class="logo-header" alt="Happy Home" width="100" height="58" />
+              </a>
+            </picture>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-          </li>
+          <li><a href="#howtoplay" class="header-link ">How to Play</a></li>
+          <li><a href="#character" class="header-link ">Character Encounters</a></li>
+          <li><a href="#gallery" class="header-link ">Gallery</a></li>
+          <li><a href="#download" class="header-link ">Download</a></li>
+          <li><a href="#faq" class="header-link ">FAQ</a></li>
+          <li><a href="#contact" class="header-link ">Contact</a></li>
         </ul>
       </nav>
-      <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">Open menu</button>
-        <div class="burger-menu" data-visible="close">
-          <ul>
-            <li><a href="#">link-1</a></li>
-            <li><a href="#">link-2</a></li>
-            <li><a href="#">link-3</a></li>
-            <li><a href="#">link-4</a></li>
-          </ul>
-          <button type="button" class="btn-close" data-action="close">close</button>
-        </div>
+    </div>
+    <!--Mobile menu-->
+    <div class="header-mobile-wrapper">
+      <div class="header-logo-mobile">
+        <picture>
+          <source srcset="
+                                  ../img/logo/logo.png 1x,
+                                  ../img/logo/logo2x.png 2x
+                                " media="(min-width: 1200px)" />
+          <a href="./index.html">
+            <img src="../img/logo/logo.png" class="logo-header" alt="Happy Home" width="80" height="46" />
+          </a>
+        </picture>
       </div>
+      <button class="header-burger-btn" type="button" id="header-logo-icon" data-header-menu-open>
+        <svg class="header-icon-btn" width="24" height="24">
+          <use href="../img/sprite.svg#icon-menu-outline"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu">
+      <button class="header-icon-close-menu" type="button" id="header-mobile-menu-close" data-header-menu-close>
+        <svg class="header-icon-close" width="24" height="24">
+          <use href="../img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <nav class="header-mobile-nav">
+        <ul class="header-list-mobile">
+          <li><a href="./index.html" class="header-link-mobile">Home</a></li>
+          <li><a href="#overview" class="header-link-mobile">Game Overview</a></li>
+          <li><a href="#gameplay" class="header-link-mobile">Gameplay Features</a></li>
+          <li><a href="#howtoplay" class="header-link-mobile">How to Play</a></li>
+          <li><a href="#character" class="header-link-mobile">Character Encounters</a></li>
+          <li><a href="#gallery" class="header-link-mobile">Gallery</a></li>
+          <li><a href="#download" class="header-link-mobile">Download</a></li>
+          <li><a href="#faq" class="header-link-mobile">FAQ</a></li>
+          <li><a href="#contact" class="header-link-mobile">Contact</a></li>
+        </ul>
+      </nav>
+
     </div>
   </div>
 </header>
