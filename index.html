@@ -1,113 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/stp-10193/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/stp-10193/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/stp-10193/assets/styles-r6SaaQ-x.css">
-  </head>
-  <body>
-    <header class="header">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Merge to design and create your dream home in Happy Home – Merge & Design. Restore rooms, unlock memories, and relax into peaceful creativity.">
+  <meta name="keywords"
+    content="Happy Home, merge puzzle, home design game, cozy decorating, room makeover, interior merge game, relaxing merge, decor merge, no ads puzzle">
+  <meta name="author" content="Wuca Games">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://designwuca.pro">
+  <meta property="og:title" content="Happy Home – Merge & Design: Build Beauty, One Merge at a Time">
+  <meta property="og:description"
+    content="Restore, design, and uncover a heartfelt story with each room you bring back to life. Play Happy Home now.">
+  <meta property="og:image" content="https://designwuca.pro/og-happyhome.jpg">
+  <meta property="og:url" content="https://designwuca.pro">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/stp-10193/assets/favicon16-B_BDyoqQ.png">
+  <link rel="apple-touch-icon" sizes="500x500" href="/stp-10193/assets/favicon500-DHK0_cv8.png">
+  <title>Happy Home-Merge and Design</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Nunito:wght@400;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <script type="module" crossorigin src="/stp-10193/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/stp-10193/assets/styles-YB8yI3BL.css">
+</head>
+
+<body>
+  <header class="header">
   <div class="container">
-    <div class="wrapper">
-      <nav class="nav">
-        <a class="nav-logo" href="./index.html" aria-label="Site logo">
-          <svg class="nav-logo-icon" width="100" height="30">
-            <use href="/stp-10193/assets/sprite-E8vg0sBb.svg#logo"></use>
-          </svg>
-        </a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+    <div class="header-wrapper">
+      <nav class="header-nav">
+        <ul class="header-list">
+          <li><a href="./index.html" class="header-link ">Home</a></li>
+          <li><a href="#overview" class="header-link ">Game Overview</a></li>
+          <li><a href="#gameplay" class="header-link ">Gameplay Features</a></li>
+          <li class="header-logo">
+            <picture>
+              <source srcset="../img/logo/logo-desk.png 1x, ../img/logo/logo-desk2x.png 2x" media="(min-width: 1200px)" />
+              <a href="./index.html">
+                <img src="../img/logo/logo-desk.png" class="logo-header" alt="Happy Home" width="100" height="58" />
+              </a>
+            </picture>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-          </li>
+          <li><a href="#howtoplay" class="header-link ">How to Play</a></li>
+          <li><a href="#character" class="header-link ">Character Encounters</a></li>
+          <li><a href="#gallery" class="header-link ">Gallery</a></li>
+          <li><a href="#download" class="header-link ">Download</a></li>
+          <li><a href="#faq" class="header-link ">FAQ</a></li>
+          <li><a href="#contact" class="header-link ">Contact</a></li>
         </ul>
       </nav>
-      <div class="header__burger-wrapper">
-        <button type="button" class="burger-btn" data-action="open">Open menu</button>
-        <div class="burger-menu" data-visible="close">
-          <ul>
-            <li><a href="#">link-1</a></li>
-            <li><a href="#">link-2</a></li>
-            <li><a href="#">link-3</a></li>
-            <li><a href="#">link-4</a></li>
-          </ul>
-          <button type="button" class="btn-close" data-action="close">close</button>
-        </div>
+    </div>
+    <!--Mobile menu-->
+    <div class="header-mobile-wrapper">
+      <div class="header-logo-mobile">
+        <picture>
+          <source srcset="../img/logo/logo.png 1x, ../img/logo/logo2x.png 2x" media="(min-width: 1200px)" />
+          <a href="./index.html">
+            <img src="../img/logo/logo.png" class="logo-header" alt="Happy Home" width="80" height="46" />
+          </a>
+        </picture>
       </div>
+      <button class="header-burger-btn" type="button" id="header-logo-icon" data-header-menu-open>
+        <svg class="header-icon-btn" width="24" height="24">
+          <use href="../img/sprite.svg#icon-menu-outline"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu">
+      <button class="header-icon-close-menu" type="button" id="header-mobile-menu-close" data-header-menu-close>
+        <svg class="header-icon-close" width="24" height="24">
+          <use href="../img/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <nav class="header-mobile-nav">
+        <ul class="header-list-mobile">
+          <li><a href="./index.html" class="header-link-mobile">Home</a></li>
+          <li><a href="#overview" class="header-link-mobile">Game Overview</a></li>
+          <li><a href="#gameplay" class="header-link-mobile">Gameplay Features</a></li>
+          <li><a href="#howtoplay" class="header-link-mobile">How to Play</a></li>
+          <li><a href="#character" class="header-link-mobile">Character Encounters</a></li>
+          <li><a href="#gallery" class="header-link-mobile">Gallery</a></li>
+          <li><a href="#download" class="header-link-mobile">Download</a></li>
+          <li><a href="#faq" class="header-link-mobile">FAQ</a></li>
+          <li><a href="#contact" class="header-link-mobile">Contact</a></li>
+        </ul>
+      </nav>
+
     </div>
   </div>
 </header>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/stp-10193/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
-  </div>
-</section>
+  <main>
+    <!-- Loads the specified .html file -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  </main>
 
-      
-      
-      
-      
-      
-      
-      
-      
-      
-    </main>
-
-    <footer class="footer">
+  <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+
   </div>
 </footer>
 
+</body>
 
-  </body>
 </html>
