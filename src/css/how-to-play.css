@@ -1,0 +1,126 @@
+.how-to-play {
+  border-radius: 16px;
+  margin: 0 auto;
+}
+.how-to-play-title {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+  align-items: center;
+  color: #1c1c1c;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+ol {
+  padding-inline-start: 0;
+}
+.how-list {
+  list-style: none;
+  display: grid;
+  gap: 30px;
+}
+.how-item {
+  position: relative;
+  border-radius: 24px;
+  padding: 17px 8px;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.how-item:hover,
+.how-item:focus {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.item-one {
+  background: #ffebc3;
+  --step-color: #ffebc3;
+}
+.item-two {
+  background: #ffe7b6;
+  --step-color: #ffe7b6;
+}
+.item-three {
+  background: #ffe2a6;
+  --step-color: #ffe2a6;
+}
+.item-four {
+  background: #ffde9b;
+  --step-color: #ffde9b;
+}
+.item-five {
+  background: #ffda8b;
+  --step-color: #ffda8b;
+}
+.how-desk {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #1c1c1c;
+}
+
+/* Кружечок з номером */
+.how-item::before {
+  content: '';
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffebd7;
+  text-align: center;
+  border-radius: 40px;
+  z-index: 1;
+}
+
+.how-item::after {
+  content: attr(data-step);
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  border-radius: 40px;
+  width: 24px;
+  height: 24px;
+  background-color: var(--step-color);
+  color: #1c1c1c;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.25;
+  box-shadow: 0 4px 8px rgba(255, 218, 139, 0.6);
+  z-index: 2;
+}
+@media screen and (min-width: 1200px) {
+  .how-to-play-title {
+    font-size: 40px;
+    line-height: 0.75;
+    margin-bottom: 82px;
+  }
+  .how-desk {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+  .how-list {
+    width: 844px;
+    margin: auto;
+  }
+  .how-item {
+    padding: 16px 31px;
+  }
+  .how-item::after {
+    top: -18px;
+    left: -18px;
+    width: 36px;
+    height: 36px;
+    font-size: 24px;
+  }
+  .how-item::before {
+    top: -15px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
