@@ -1,5 +1,3 @@
-.features {
-}
 .features-title {
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
@@ -24,10 +22,6 @@
 }
 .features-list li:last-child {
   border-bottom: none; /* щоб останній елемент не мав лінії */
-}
-.features-item {
-}
-.features-photo {
 }
 .features-text {
   font-weight: 400;
