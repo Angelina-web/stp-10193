@@ -7,6 +7,7 @@
   line-height: 1.25;
   text-align: center;
   color: #1c1c1c;
+  margin-top: 40px;
   margin-bottom: 24px;
   align-items: center;
   text-align: center;
@@ -36,7 +37,6 @@
   .features-title {
     font-size: 40px;
     line-height: 0.75;
-    margin-top: 40px;
     margin-bottom: 64px;
   }
   .features-list {
