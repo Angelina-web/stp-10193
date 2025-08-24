@@ -3,19 +3,21 @@
     <div class="header-wrapper">
       <nav class="header-nav">
         <ul class="header-list">
-          <li><a href="./index.html" data-category-link class="header-link ">Home</a></li>
+          <li><a href="#home" data-category-link class="header-link ">Home</a></li>
           <li><a href="#overview" data-category-link class="header-link ">Game Overview</a></li>
           <li><a href="#gameplay" data-category-link class="header-link ">Gameplay Features</a></li>
           <li class="header-logo">
-            <picture>
-              <source srcset="
+            <a href="./index.html">
+              <picture>
+                <source srcset="
                             ./img/logo/logo-desk.png 1x,
                             ./img/logo/logo-desk2x.png 2x
                           " media="(min-width: 1200px)" />
-              <a href="./index.html">
+
                 <img src="./img/logo/logo-desk.png" class="logo-header" alt="Happy Home" width="100" height="58" />
-              </a>
-            </picture>
+
+              </picture>
+            </a>
           </li>
           <li><a href="#howtoplay" data-category-link class="header-link ">How to Play</a></li>
           <li><a href="#character" data-category-link class="header-link ">Character Encounters</a></li>
@@ -29,15 +31,15 @@
     <!--Mobile menu-->
     <div class="header-mobile-wrapper">
       <div class="header-logo-mobile">
-        <picture>
-          <source srcset="
+        <a href="./index.html">
+          <picture>
+            <source srcset="
                                   ./img/logo/logo.png 1x,
                                   ./img/logo/logo2x.png 2x
                                 " media="(min-width: 1200px)" />
-          <a href="./index.html">
             <img src="./img/logo/logo.png" class="logo-header" alt="Happy Home" width="80" height="46" />
-          </a>
-        </picture>
+          </picture>
+        </a>
       </div>
       <button class="header-burger-btn" type="button" id="header-logo-icon" data-header-menu-open>
         <svg class="header-icon-btn" width="24" height="24">
@@ -45,27 +47,26 @@
         </svg>
       </button>
     </div>
-    <div class="mobile-menu">
-      <button class="header-icon-close-menu" type="button" id="header-mobile-menu-close" data-header-menu-close>
-        <svg class="header-icon-close" width="24" height="24">
-          <use href="./img/sprite.svg#icon-close"></use>
-        </svg>
-      </button>
 
-      <nav class="header-mobile-nav">
-        <ul class="header-list-mobile">
-          <li><a href="./index.html" data-category-link class="header-link-mobile">Home</a></li>
-          <li><a href="#overview" data-category-link class="header-link-mobile">Game Overview</a></li>
-          <li><a href="#gameplay" data-category-link class="header-link-mobile">Gameplay Features</a></li>
-          <li><a href="#howtoplay" data-category-link class="header-link-mobile">How to Play</a></li>
-          <li><a href="#character" data-category-link class="header-link-mobile">Character Encounters</a></li>
-          <li><a href="#gallery" data-category-link class="header-link-mobile">Gallery</a></li>
-          <li><a href="#download" data-category-link class="header-link-mobile">Download</a></li>
-          <li><a href="#faq" data-category-link class="header-link-mobile">FAQ</a></li>
-          <li><a href="#contact" data-category-link class="header-link-mobile">Contact</a></li>
-        </ul>
-      </nav>
-
-    </div>
   </div>
 </header>
+<div class="mobile-menu-js">
+  <button class="header-icon-close-menu" type="button" id="header-mobile-menu-close" data-header-menu-close>
+    <svg class="header-icon-close" width="24" height="24">
+      <use href="./img/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <nav class="header-mobile-nav">
+    <ul class="header-list-mobile">
+      <li><a href="#home" data-category-link class="header-link-mobile">Home</a></li>
+      <li><a href="#overview" data-category-link class="header-link-mobile">Game Overview</a></li>
+      <li><a href="#gameplay" data-category-link class="header-link-mobile">Gameplay Features</a></li>
+      <li><a href="#howtoplay" data-category-link class="header-link-mobile">How to Play</a></li>
+      <li><a href="#character" data-category-link class="header-link-mobile">Character Encounters</a></li>
+      <li><a href="#gallery" data-category-link class="header-link-mobile">Gallery</a></li>
+      <li><a href="#download" data-category-link class="header-link-mobile">Download</a></li>
+      <li><a href="#faq" data-category-link class="header-link-mobile">FAQ</a></li>
+      <li><a href="#contact" data-category-link class="header-link-mobile">Contact</a></li>
+    </ul>
+  </nav>
+</div>

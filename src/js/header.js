@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const burgerBtn = document.querySelector('[data-header-menu-open]');
   const closeBtn = document.querySelector('[data-header-menu-close]');
-  const mobileMenu = document.querySelector('.mobile-menu');
+  const mobileMenu = document.querySelector('.mobile-menu-js');
   const categoryLinks = document.querySelectorAll('[data-category-link]');
   // Відкриття меню
   burgerBtn.addEventListener('click', () => {

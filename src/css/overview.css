@@ -1,6 +1,5 @@
 .overview {
   background: #ffda8b;
-  scroll-margin-top: 80px;
 }
 
 .overview-title {
@@ -25,7 +24,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 16px;
   }
   .overview-title {
     font-size: 40px;
@@ -37,5 +35,9 @@
     width: 419px;
     margin-left: 89px;
     margin-right: 24px;
+  }
+  .wave-top svg,
+  .wave-bottom svg {
+    height: 80px;
   }
 }

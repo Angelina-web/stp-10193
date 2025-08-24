@@ -1,26 +1,27 @@
-/* Загальний хедер */
 .header {
-  background-color: #e84fc4;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
-  overflow: hidden;
+  height: 80px; /* регулюй висоту */
+  background-color: #db19a9; /* основний фон */
+  clip-path: ellipse(80% 100% at 50% 0%); /* заокруглення знизу */
+  z-index: 10;
 }
 
-/* Хвилястий низ */
+/* обідок */
 .header::after {
   content: '';
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 16px;
-  background-color: #c218a3;
-  border-bottom-left-radius: 50% 100%;
-  border-bottom-right-radius: 50% 100%;
+  height: 70px; /* така ж висота */
+  background-color: #ef6dc8;
+  clip-path: ellipse(80% 100% at 50% 0%); /* трошки більша еліпса */
+  z-index: -1; /* відправляємо назад */
 }
+
 .header-wrapper {
   display: none;
 }
@@ -29,7 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80px;
+  height: 70px;
   position: relative;
 }
 
@@ -57,20 +58,21 @@
 }
 
 /* Мобільне меню */
-.mobile-menu {
+.mobile-menu-js {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fde7d8;
-  z-index: 999;
+  height: 450px;
+  background-color: #ffebd7;
+  z-index: 1000;
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
   padding: 24px 24px;
   text-align: end;
 }
 
-.mobile-menu.open {
+.mobile-menu-js.open {
   transform: translateX(0);
 }
 
@@ -91,7 +93,7 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 
 .header-link-mobile {
@@ -101,14 +103,19 @@
   line-height: 1.25;
   text-align: right;
   color: #1c1c1c;
-  gap: 16px;
 }
 .header-link-mobile:hover {
   color: #fcb825;
 }
 @media screen and (min-width: 1200px) {
+  .header {
+    height: 160px;
+  }
+  .header::after {
+    height: 150px;
+  }
   .header-mobile-wrapper,
-  .mobile-menu {
+  .mobile-menu-js {
     display: none;
   }
   .header-wrapper {
@@ -125,7 +132,6 @@
     flex-wrap: wrap;
     flex-direction: row;
     gap: 24px;
-    list-style: none;
     padding: 0;
     margin-bottom: 30px;
   }
@@ -136,11 +142,13 @@
     align-items: center;
     list-style: none;
     padding: 0px 79px;
-    gap: 17px;
+    column-gap: 17px;
+    row-gap: 0;
     flex-wrap: wrap;
   }
 
   .header-link {
+    display: inline-block;
     font-family: 'DM Sans', sans-serif;
     font-weight: 500;
     font-size: 20px;
@@ -158,11 +166,5 @@
   .header-logo {
     flex-shrink: 0;
     margin: 24px;
-  }
-
-  .logo-header {
-    display: block;
-    max-width: 100px;
-    height: auto;
   }
 }
