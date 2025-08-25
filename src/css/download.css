@@ -74,6 +74,12 @@
 .wave-bottom {
   position: relative;
 }
+.wave-top svg {
+  margin-bottom: -1px;
+}
+.wave-bottom svg {
+  margin-top: -1px;
+}
 .wave-top svg,
 .wave-bottom svg {
   display: block;
@@ -92,5 +98,9 @@
     line-height: 0.75;
     margin: 0 auto 40px;
     max-width: 100%;
+  }
+  .wave-top svg,
+  .wave-bottom svg {
+    height: 80px;
   }
 }
