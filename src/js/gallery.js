@@ -1,6 +1,5 @@
 import Swiper, { Navigation, Pagination, Autoplay, EffectCoverflow, Lazy } from 'swiper';
 import 'swiper/css';
-import 'swiper/css/effect-coverflow';
 
 function initSwiper() {
   const container = document.querySelector('.swiper.gallery-swiper');
@@ -11,7 +10,6 @@ function initSwiper() {
   const enableLoop = slidesCount > maxSlidesPerView;
 
 const swiper = new Swiper(container, {
-     modules: [Pagination, Autoplay, EffectCoverflow, Lazy],
   loop: enableLoop,              
   effect: 'coverflow',      
   grabCursor: true,
