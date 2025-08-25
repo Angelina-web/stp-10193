@@ -30,9 +30,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
   <script type="module" crossorigin src="/stp-10193/index.js"></script>
-  <link rel="modulepreload" crossorigin href="/stp-10193/assets/vendor-Kq7qEFgH.js">
-  <link rel="stylesheet" crossorigin href="/stp-10193/assets/vendor-wjhWB3DI.css">
-  <link rel="stylesheet" crossorigin href="/stp-10193/assets/styles-B_jop1nx.css">
+  <link rel="modulepreload" crossorigin href="/stp-10193/assets/vendor-CPZzQh2F.js">
+  <link rel="stylesheet" crossorigin href="/stp-10193/assets/vendor-Be9b3THL.css">
+  <link rel="stylesheet" crossorigin href="/stp-10193/assets/styles-DWxJYJcR.css">
 </head>
 
 <body>
@@ -75,7 +75,7 @@
       </div>
       <button class="header-burger-btn" type="button" id="header-logo-icon" data-header-menu-open>
         <svg class="header-icon-btn" width="24" height="24">
-          <use href="/stp-10193/assets/sprite-Vwfr8CSn.svg#icon-menu-outline"></use>
+          <use href="/stp-10193/assets/sprite-kzDDlkCl.svg#icon-menu-outline"></use>
         </svg>
       </button>
     </div>
@@ -85,7 +85,7 @@
 <div class="mobile-menu-js">
   <button class="header-icon-close-menu" type="button" id="header-mobile-menu-close" data-header-menu-close>
     <svg class="header-icon-close" width="24" height="24">
-      <use href="/stp-10193/assets/sprite-Vwfr8CSn.svg#icon-close"></use>
+      <use href="/stp-10193/assets/sprite-kzDDlkCl.svg#icon-close"></use>
     </svg>
   </button>
   <nav class="header-mobile-nav">
@@ -405,60 +405,93 @@
   <h2 class="gallery-title">Gallery</h2>
 
   <div class="swiper gallery-swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
+    <div class="swiper-wrapper gallery-list">
+      <div class="swiper-slide gallery-list-element">
         <img
-          src="./img/gallery/1000-items.jpg"
+          src="/stp-10193/assets/1000-items-DtCkX_YC.png"
           alt="1000-items"
-          class="gallery-img"
+          class="gallery-img swiper-lazy"
+          data-src="./img/gallery/1000-items@2x.png"
         />
+        <div class="swiper-lazy-preloader"></div>
       </div>
-      <div class="swiper-slide">
-        <img src="/stp-10193/assets/design-BRsNU1EE.jpg" alt="design" class="gallery-img" />
-      </div>
-      <div class="swiper-slide">
+
+      <div class="swiper-slide gallery-list-element">
         <img
-          src="/stp-10193/assets/exciting-story-CmsyrpBL.jpg"
+          src="/stp-10193/assets/exciting-story-D7l7feaQ.png"
           alt="exciting-story"
-          class="gallery-img"
+          class="gallery-img swiper-lazy"
+          data-src="./img/gallery/exciting-story@2x.png"
         />
+        <div class="swiper-lazy-preloader"></div>
       </div>
-      <div class="swiper-slide">
+
+      <div class="swiper-slide gallery-list-element">
         <img
-          src="/stp-10193/assets/explore-Diomj_ZL.jpg"
+          src="/stp-10193/assets/explore-CmD4NZKJ.png"
           alt="explore"
-          class="gallery-img"
+          class="gallery-img swiper-lazy"
+          data-src="./img/gallery/explore@2x.png"
         />
+        <div class="swiper-lazy-preloader"></div>
       </div>
-      <div class="swiper-slide">
+
+      <div class="swiper-slide gallery-list-element">
         <img
-          src="/stp-10193/assets/fix-houses-B44lKQn0.jpg"
+          src="/stp-10193/assets/fix-houses-CaZCJJxB.png"
           alt="fix-houses"
-          class="gallery-img"
+          class="gallery-img swiper-lazy"
+          data-src="./img/gallery/fix-houses@2x.png"
         />
+        <div class="swiper-lazy-preloader"></div>
       </div>
-      <div class="swiper-slide">
+
+      <div class="swiper-slide gallery-list-element">
         <img
-          src="/stp-10193/assets/match-furniture-CYFHM0SV.jpg"
+          src="/stp-10193/assets/match-furniture-D2bVXRsZ.png"
           alt="match-furniture"
-          class="gallery-img"
+          class="gallery-img swiper-lazy"
+          data-src="./img/gallery/match-furniture@2x.png"
         />
+        <div class="swiper-lazy-preloader"></div>
       </div>
-      <div class="swiper-slide">
+
+      <div class="swiper-slide gallery-list-element">
         <img
-          src="/stp-10193/assets/renovate-aDX3ZK-n.jpg"
+          src="/stp-10193/assets/renovate-CyLxvGvz.png"
           alt="renovate"
-          class="gallery-img"
+          class="gallery-img swiper-lazy"
+          data-src="./img/gallery/renovate@2x.png"
         />
+        <div class="swiper-lazy-preloader"></div>
+      </div>
+
+      <div class="swiper-slide gallery-list-element">
+        <img
+          src="/stp-10193/assets/design-BQ6jLtw4.png"
+          alt="design"
+          class="gallery-img swiper-lazy"
+          data-src="./img/gallery/design@2x.png"
+        />
+        <div class="swiper-lazy-preloader"></div>
       </div>
     </div>
 
-
-    <div class="swiper-button-prev gallery-button-prev"></div>
-    <div class="swiper-button-next gallery-button-next"></div>
-
-
-    <div class="swiper-pagination"></div>
+    <div class="gallery-controls">
+      <div class="swiper-pagination"></div>
+      <div class="navigation-buttons">
+        <div class="swiper-button-prev" aria-label="Previous slide">
+          <svg width="24" height="24">
+            <use href="sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next" aria-label="Next slide">
+          <svg width="24" height="24">
+            <use href="sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -643,16 +676,20 @@
       <p class="contact-item"><strong>Our social media:</strong></p>
     </div>
 
-    <!-- Фото + іконки разом -->
     <div class="contact-photo-icons">
-      <img src="img/other/girl.jpg" alt="Our representative" class="girl-photo" />
-
+      <div class="girl fade-left">
+      <img src="/stp-10193/assets/girl-D6mzuIqk.png" alt="Our representative" class="girl-photo" />
+</div>
       <div class="social-icons">
-        <a href="https://instagram.com" target="_blank" class="social-link">
-          <img src="img/social-icons/instagram.svg" alt="Instagram" />
+        <a href="https://instagram.com" target="_blank" class="social-link instagram">
+           <svg class="social-icon" width="24" height="24">
+    <use href="../img/sprite.svg#icon-Instagram"></use>
+  </svg>
         </a>
         <a href="https://pinterest.com" target="_blank" class="social-link">
-          <img src="img/social-icons/pinterest.svg" alt="Pinterest" />
+           <svg class="social-icon" width="24" height="24">
+    <use href="../img/sprite.svg#icon-Pinterest"></use>
+  </svg>
         </a>
       </div>
     </div>
