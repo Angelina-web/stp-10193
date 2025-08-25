@@ -17,9 +17,16 @@
     <h2 class="download-title">Download</h2>
     <p class="download-p">Bring Life Back to Your Happy Home</p>
     <a href="#" class="download-btn" target="_blank">
-      <svg class="download-btn-icon">
-        <use href="../img/sprite.svg#icon-googleplay"></use>
-      </svg>
+      <picture class="hero-photo">
+                <source srcset="./img/play/play-market-desk.png 1x,
+                        ./img/play/play-market-desk2x.png 2x
+                            " media="(min-width: 1200px)" />
+                <source srcset="
+                              ./img/play/play-market.png 1x,
+                              ./img/play/play-market.png 2x
+                            " media="(min-width: 320px)" />
+                <img src="./img/play/play-market.png" alt="play-market" width="24" height="26" class="hero-play" />
+            </picture>
       <span class="download-btn-texts">
         <span class="download-btn-title">Get it on</span>
         <span class="download-btn-subtitle">Google Play</span>

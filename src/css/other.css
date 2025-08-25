@@ -1,5 +1,4 @@
 .main-title {
-  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
@@ -7,13 +6,23 @@
   margin-bottom: 40px;
   margin-top: 40px;
 }
-text {
-  font-family: 'DM Sans', sans-serif;
+.text {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.875;
   color: var(--color-text);
   margin-bottom: 40px;
+}
+.text-list {
+  list-style: disc;
+  margin-bottom: 40px;
+  list-style-position: inside;
+}
+.text-item {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--color-text);
 }
 .text-link {
   color: var(--color-text);
@@ -24,6 +33,32 @@ text {
   text-decoration: underline;
   color: var(--color-text);
 }
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  border: none;
+  transition: transform 0.2s ease;
+  margin: 40px 16px;
+}
+
+.back-link:hover {
+  color: var(--color-btn);
+}
+
+.back-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
 @media screen and (min-width: 1200px) {
   .main-title {
     font-weight: 700;
@@ -31,8 +66,12 @@ text {
     line-height: 0.75;
     margin-top: 80px;
   }
-
-  text {
+  .text {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  .text-item {
     font-weight: 400;
     font-size: 20px;
     line-height: 1.5;
