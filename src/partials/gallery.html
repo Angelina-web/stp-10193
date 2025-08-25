@@ -2,59 +2,92 @@
   <h2 class="gallery-title">Gallery</h2>
 
   <div class="swiper gallery-swiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
+    <div class="swiper-wrapper gallery-list">
+      <div class="swiper-slide gallery-list-element">
         <img
-          src="./img/gallery/1000-items.jpg"
+          src="./img/gallery/1000-items.png"
           alt="1000-items"
-          class="gallery-img"
+          class="gallery-img swiper-lazy"
+          data-src="./img/gallery/1000-items@2x.png"
         />
+        <div class="swiper-lazy-preloader"></div>
       </div>
-      <div class="swiper-slide">
-        <img src="./img/gallery/design.jpg" alt="design" class="gallery-img" />
-      </div>
-      <div class="swiper-slide">
+
+      <div class="swiper-slide gallery-list-element">
         <img
-          src="./img/gallery/exciting-story.jpg"
+          src="./img/gallery/exciting-story.png"
           alt="exciting-story"
-          class="gallery-img"
+          class="gallery-img swiper-lazy"
+          data-src="./img/gallery/exciting-story@2x.png"
         />
+        <div class="swiper-lazy-preloader"></div>
       </div>
-      <div class="swiper-slide">
+
+      <div class="swiper-slide gallery-list-element">
         <img
-          src="./img/gallery/explore.jpg"
+          src="./img/gallery/explore.png"
           alt="explore"
-          class="gallery-img"
+          class="gallery-img swiper-lazy"
+          data-src="./img/gallery/explore@2x.png"
         />
+        <div class="swiper-lazy-preloader"></div>
       </div>
-      <div class="swiper-slide">
+
+      <div class="swiper-slide gallery-list-element">
         <img
-          src="./img/gallery/fix-houses.jpg"
+          src="./img/gallery/fix-houses.png"
           alt="fix-houses"
-          class="gallery-img"
+          class="gallery-img swiper-lazy"
+          data-src="./img/gallery/fix-houses@2x.png"
         />
+        <div class="swiper-lazy-preloader"></div>
       </div>
-      <div class="swiper-slide">
+
+      <div class="swiper-slide gallery-list-element">
         <img
-          src="./img/gallery/match-furniture.jpg"
+          src="./img/gallery/match-furniture.png"
           alt="match-furniture"
-          class="gallery-img"
+          class="gallery-img swiper-lazy"
+          data-src="./img/gallery/match-furniture@2x.png"
         />
+        <div class="swiper-lazy-preloader"></div>
       </div>
-      <div class="swiper-slide">
+
+      <div class="swiper-slide gallery-list-element">
         <img
-          src="./img/gallery/renovate.jpg"
+          src="./img/gallery/renovate.png"
           alt="renovate"
-          class="gallery-img"
+          class="gallery-img swiper-lazy"
+          data-src="./img/gallery/renovate@2x.png"
         />
+        <div class="swiper-lazy-preloader"></div>
+      </div>
+
+      <div class="swiper-slide gallery-list-element">
+        <img
+          src="./img/gallery/design.png"
+          alt="design"
+          class="gallery-img swiper-lazy"
+          data-src="./img/gallery/design@2x.png"
+        />
+        <div class="swiper-lazy-preloader"></div>
       </div>
     </div>
 
-
-    <div class="swiper-button-prev gallery-button-prev"></div>
-    <div class="swiper-button-next gallery-button-next"></div>
-
-
-    <div class="swiper-pagination"></div>
+    <div class="gallery-controls">
+      <div class="swiper-pagination"></div>
+      <div class="navigation-buttons">
+        <div class="swiper-button-prev" aria-label="Previous slide">
+          <svg width="24" height="24">
+            <use href="sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next" aria-label="Next slide">
+          <svg width="24" height="24">
+            <use href="sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

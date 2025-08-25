@@ -1,18 +1,16 @@
-.gallery-title {
+ .gallery-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.25;
   text-align: center;
   color: var(--color-text);
-  margin: 40px 0 24px;
+  margin-top: 40px;
+  margin-bottom: 24px;
 }
+
 .gallery-swiper {
   width: 100%;
-   max-width: 848px;
-  padding: 40px 0 56px;
   position: relative;
-  margin-bottom: 24px;
-
 }
 .swiper-slide {
   display: flex;
@@ -23,8 +21,7 @@
 .gallery-img {
   border-radius: 48px;
   object-fit: cover;
-  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.4);
- transition: all 0.35s ease;
+box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.4);
 }
 
 .swiper-pagination {
@@ -38,7 +35,7 @@
   opacity: 1;
 }
 .swiper-pagination-bullet-active {
-  background: var(--color-pink-accent); /* рожева активна точка */
+  background: var(--color-pink-accent);
 }
 
 .gallery-button-prev,
@@ -57,9 +54,6 @@
   cursor: pointer;
   z-index: 10;
 }
-.gallery-button-prev { left: -56px; }
-.gallery-button-next { right: -56px; }
-
 
 @media screen and (min-width: 1200px) {
   .gallery-title {
@@ -68,9 +62,13 @@
     line-height: 0.75;
   }
   .gallery-swiper{
-      margin-bottom: 40px;
+    max-width: 848px;
   }
   .swiper-pagination{
     bottom: 80px;
   }
+  .gallery-img {
+box-shadow: 0 5px 2px 0 rgba(0, 0, 0, 0.35);
+
 }
+}  
