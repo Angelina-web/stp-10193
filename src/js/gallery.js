@@ -1,5 +1,10 @@
-import Swiper, { Navigation, Pagination, Autoplay, EffectCoverflow, Lazy } from 'swiper';
+import Swiper from 'swiper';
+import { Navigation, Pagination, Autoplay, EffectCoverflow, Lazy } from 'swiper/modules';
 import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/lazy';
 
 function initSwiper() {
   const container = document.querySelector('.swiper.gallery-swiper');
@@ -7,6 +12,10 @@ function initSwiper() {
 
   const slidesCount = container.querySelectorAll('.swiper-slide').length;
   const enableLoop = slidesCount > 3;
+
+   const paginationEl = container.querySelector('.swiper-pagination');
+  const nextEl = container.querySelector('.gallery-button-next');
+  const prevEl = container.querySelector('.gallery-button-prev');
 
 const swiper = new Swiper(container, {
   modules: [Navigation, Pagination, Autoplay, EffectCoverflow, Lazy],
@@ -19,7 +28,7 @@ const swiper = new Swiper(container, {
     rotate: 50,
     stretch: 0,
     depth: 100,
-    modifier: 2.5,
+    modifier: 1.2,
     slideShadows: false,
   },
    autoplay: {
@@ -32,8 +41,8 @@ const swiper = new Swiper(container, {
     clickable: true,
   },
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+     nextEl: nextEl,   
+      prevEl: prevEl,
   },
 lazy: {
       loadPrevNext: true,
