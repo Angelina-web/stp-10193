@@ -93,13 +93,6 @@
   z-index: 10;
   transition: transform 0.2s ease;
   }
-  .gallery-button-prev {
-    left: 16px;
-  }
-
-  .gallery-button-next {
-    right: -64px;
-  }
 
   .gallery-button-prev svg,
   .gallery-button-next svg {
