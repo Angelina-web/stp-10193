@@ -1,3 +1,7 @@
+.feat-cont {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 .features-title {
   font-family: 'Nunito', sans-serif;
   font-weight: 700;
@@ -5,23 +9,28 @@
   line-height: 1.25;
   text-align: center;
   color: #1c1c1c;
-  margin-top: 40px;
   margin-bottom: 24px;
   align-items: center;
+}
+.features-item:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .features-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
+  margin: auto;
   margin-left: 23px;
   margin-right: 23px;
 }
 .features-list li {
-  padding-bottom: 24px;
-  border-bottom: 1px solid #ffe600; /* жовта лінія як на макеті */
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ffda8b;
 }
 .features-list li:last-child {
-  border-bottom: none; /* щоб останній елемент не мав лінії */
+  border-bottom: none;
+  padding-bottom: 0;
 }
 .features-text {
   font-weight: 400;
@@ -36,7 +45,8 @@
 }
 @media screen and (min-width: 1200px) {
   .feat-cont {
-    padding: 0 80px;
+    padding: 40px 80px;
+    padding-bottom: 80px;
   }
   .features-title {
     font-size: 40px;
@@ -48,6 +58,8 @@
     flex-direction: row;
     gap: 24px;
     row-gap: 40px;
+    margin-right: 0;
+    margin-left: 0;
   }
   .features-list li {
     width: calc((100% - 72px) / 4); /* 3 × 24px між 4 елементами */

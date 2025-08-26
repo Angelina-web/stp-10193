@@ -1,3 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px; /* для мобільних */
+}
+
+@media only screen and (min-width: 1200px) {
+  section {
+    scroll-margin-top: 160px; /* для десктопу */
+  }
+}
 :root {
   /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
   font-family: 'DM Sans', sans-serif;

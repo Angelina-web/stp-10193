@@ -17,7 +17,24 @@
   font-size: 20px;
   line-height: 1.5;
   color: #1c1c1c;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+}
+.overview-desk:last-child {
+  margin-bottom: 16px;
+}
+.js-owerview-img {
+  opacity: 0;
+  transform: translateY(50px); /* виїжджає знизу */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.js-owerview-img.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.overview-photo img {
+  width: 183px;
+  height: 220px;
+  margin: auto;
 }
 @media screen and (min-width: 1200px) {
   .overview-container {
@@ -36,8 +53,9 @@
     margin-left: 89px;
     margin-right: 24px;
   }
-  .wave-top svg,
-  .wave-bottom svg {
-    height: 80px;
+  .overview-photo img {
+    width: 443px;
+    height: 532px;
+    margin-top: 24px;
   }
 }

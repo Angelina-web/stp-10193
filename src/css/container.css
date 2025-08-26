@@ -4,21 +4,10 @@
   margin: 0 auto;
   padding: 0 16px;
 }
-section {
-  scroll-margin-top: 80px; /* висота хедера на моб */
-}
-/* Styles for Tablet devices */
-/* @media only screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-} */
+
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-  }
-  section {
-    scroll-margin-top: 160px; /* висота хедера на ПК */
   }
 }
