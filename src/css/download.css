@@ -61,11 +61,13 @@
   text-shadow: 0 3px 2px rgba(0, 0, 0, 0.4);
 }
 .download-btn-title {
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.33;
 }
 .download-btn-subtitle {
+  font-family: 'Nunito', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 1.25;
@@ -102,5 +104,19 @@
   .wave-top svg,
   .wave-bottom svg {
     height: 80px;
+  }
+  .download-btn {
+    max-width: 330px;
+    gap: 16px;
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+  .download-btn-title {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .download-btn-subtitle {
+    font-size: 20px;
+    line-height: 1;
   }
 }
