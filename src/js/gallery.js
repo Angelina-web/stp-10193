@@ -28,6 +28,7 @@ function initSwiper() {
     pagination: {
       el: paginationEl,
       clickable: true,
+      centered: true
     },
     navigation: { nextEl: nextEl, prevEl: prevEl },
     breakpoints: {
