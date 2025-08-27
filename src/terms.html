@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Terms & Conditions</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/back-link.html" />
-
-    <main>
-      <div class="container">
+<link rel="stylesheet" href="./css/styles.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<div class="container terms-container">
+  <a class="terms-btn" href="index.html">
+    <svg class="terms-icon" width="24" height="24">
+      <use href="./img/sprite.svg#icon-arrow-back-outline"></use>
+    </svg>
+    Go to home</a>
+    
         <h2 class="main-title">Terms and Conditions</h2>
         <p class="text">These terms and conditions apply to the Star Force app (hereby referred to as "Application") for mobile devices that was
         created by (hereby referred to as "Service Provider") as a Free service.</p>
@@ -121,8 +116,20 @@ Provider at <a href="mailto:info@designwuca.pro" class="contact-link">info@desig
 </p>
 
       </div>
-    </main>
 
-    <load src="./partials/footer.html" />
-  </body>
-</html>
+      <footer class="footer">
+        <div class="footer-container container">
+          <nav class="footer-nav">
+            <a href="./privacy-policy.html" class="footer-link">Privacy Policy</a>
+            <span class="footer-separator">|</span>
+            <a href="./terms.html" class="footer-link">Terms & Conditions</a>
+            <span class="footer-separator">|</span>
+            <a href="./cookies.html" class="footer-link">Cookies Policy</a>
+          </nav>
+          <p class="footer-copy">
+            All rights reserved
+            <a href="https://designwuca.pro" target="_blank" class="footer-brand">designwuca.pro</a>
+            | 2025
+          </p>
+        </div>
+      </footer>

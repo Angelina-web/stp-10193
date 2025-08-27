@@ -1,0 +1,125 @@
+.modal-cookies {
+  background-color: #ffebd7;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 40px 0 28px 0;
+}
+
+.cookies-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cookies-button-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cookies-title {
+  font-family: 'Coiny';
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+.cookies-text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  color: #1c1c1c;
+  margin-bottom: 24px;
+}
+
+.cookies-button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cookies-button {
+  border-radius: 18px;
+  padding: 14px 64px;
+  width: 289px;
+  height: 48px;
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+.accept-button {
+  box-shadow: 0 5px 2px 0 rgba(0, 0, 0, 0.35);
+  background-color: #fcb825;
+  border: 5px solid #fffeff;
+  color: var(--colot-white);
+  text-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.accept-button:active {
+  color: var(--color-pink-accent);
+}
+
+.decline-button {
+  box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.25);
+  border: 5px solid #fcb825;
+  color: var(--color-tetx);
+  background-color: transparent;
+  text-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.decline-button:active {
+  color: var(--color-pink-accent);
+}
+
+@media only screen and (min-width: 1200px) {
+  .cookies-button-container {
+    gap: 20px;
+  }
+
+  .cookies-button-container {
+    flex-direction: row;
+  }
+
+  .cookies-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .cookies-text {
+    width: 862px;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .accept-button {
+    border-radius: 24px;
+    width: 330px;
+    height: 60px;
+    line-height: 1.5;
+    font-size: 20px;
+  }
+
+  .accept-button:hover,
+  .accept-button:focus {
+    color: var(--color-pink-accent);
+  }
+
+  .decline-button {
+    border-radius: 24px;
+    font-size: 20px;
+    width: 330px;
+    height: 60px;
+    line-height: 1.5;
+  }
+
+  .decline-button:hover,
+  .decline-button:focus {
+    color: var(--color-pink-accent);
+  }
+}
