@@ -20,10 +20,10 @@
 }
 
 .cookies-title {
-  font-family: 'Coiny';
-  font-weight: 400;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 24px;
   text-align: center;
+  margin-bottom: 24px;
 }
 
 .cookies-text {
@@ -45,19 +45,19 @@
   border-radius: 18px;
   padding: 14px 64px;
   width: 289px;
-  height: 48px;
   text-align: center;
   font-family: 'Nunito', sans-serif;
   font-weight: 800;
   font-size: 16px;
   line-height: 1.25;
+  cursor: pointer;
 }
 
 .accept-button {
   box-shadow: 0 5px 2px 0 rgba(0, 0, 0, 0.35);
   background-color: #fcb825;
   border: 5px solid #fffeff;
-  color: var(--colot-white);
+  color: var(--color-white);
   text-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.4);
 }
 
@@ -68,7 +68,7 @@
 .decline-button {
   box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.25);
   border: 5px solid #fcb825;
-  color: var(--color-tetx);
+  color: var(--color-text);
   background-color: transparent;
   text-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.4);
 }
@@ -79,11 +79,8 @@
 
 @media only screen and (min-width: 1200px) {
   .cookies-button-container {
-    gap: 20px;
-  }
-
-  .cookies-button-container {
     flex-direction: row;
+    gap: 20px;
   }
 
   .cookies-title {
@@ -100,7 +97,6 @@
   .accept-button {
     border-radius: 24px;
     width: 330px;
-    height: 60px;
     line-height: 1.5;
     font-size: 20px;
   }
