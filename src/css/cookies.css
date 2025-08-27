@@ -43,8 +43,7 @@
 
 .cookies-button {
   border-radius: 18px;
-  padding: 14px 64px;
-  width: 289px;
+  padding: 14px 84px;
   text-align: center;
   font-family: 'Nunito', sans-serif;
   font-weight: 800;
@@ -93,10 +92,11 @@
     font-size: 20px;
     line-height: 1.5;
   }
-
+.cookies-button {
+  border-radius: 24px;
+  padding: 15px 90px;
+}
   .accept-button {
-    border-radius: 24px;
-    width: 330px;
     line-height: 1.5;
     font-size: 20px;
   }
@@ -107,9 +107,7 @@
   }
 
   .decline-button {
-    border-radius: 24px;
-    font-size: 20px;
-    width: 330px;
+font-size: 20px;
     line-height: 1.5;
   }
 
