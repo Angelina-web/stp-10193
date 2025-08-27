@@ -1,57 +1,53 @@
-<section class="container contact-section" id="contact">
-  <h2 class="contact-title">Contact</h2>
+<section class="contact" id="contact">
+  <div class="container contact-section">
+    <h2 class="contact-title">Contact</h2>
+    <div class="contact-wrapper">
 
-  <div class="contact-wrapper">
-    <div class="contact-photo fade-left">
-      <img
-        src="./img/other/girl.png"
-        alt="Girl"
-        class="girl-img"
-        srcset="./img/other/girl@2x.png"
-      />
-    </div>
-    <div class="contact-icons">
+      <!-- Контактна інформація -->
       <div class="contact-info">
         <p class="contact-item">
-          <strong>Email:</strong>
+          Email:
           <a href="mailto:info@designwuca.pro" class="contact-link">
             info@designwuca.pro
           </a>
         </p>
-        <p class="contact-item">
-          <strong>Business Address:</strong><br />
-          <a
-            href="https://www.google.com/maps?q=Wuca+Games,+88+Blossom+Lane,+Portland,+OR+97229"
-            target="_blank"
-            class="contact-link"
-          >
-            Wuca Games, 88 Blossom Lane,<br />
+
+        <address class="contact-item-address">
+          Business Address:
+          <a href="https://www.google.com/maps?q=Wuca+Games,+88+Blossom+Lane,+Portland,+OR+97229" target="_blank"
+            rel="noopener noreferrer" class="contact-link">
+            Wuca<br /> Games, 88 Blossom Lane,<br />
             Portland, OR 97229
           </a>
-        </p>
-        <p class="contact-item"><strong>Our social media:</strong></p>
+        </address>
       </div>
 
+
+      <!-- Соцмережі -->
       <div class="social-icons">
-        <a href="https://instagram.com" target="_blank" class="social-link">
-          <img
-            src="../img/social-icons/instagram.svg"
-            alt="Instagram"
-            width="24"
-            height="24"
-            class="social-link"
-          />
-        </a>
-        <a href="https://pinterest.com" target="_blank" class="social-link">
-          <img
-            src="../img/social-icons/pinterest.svg"
-            alt="Pinterest"
-            width="24"
-            height="24"
-            class="social-link"
-          />
-        </a>
+        <p class="contact-item-social">Our social media:</p>
+        <div class="icons-soc">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link">
+            <img src="./img/social-icons/instagram.svg" alt="Instagram" width="24" height="24" />
+          </a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-link">
+            <img src="./img/social-icons/pinterest.svg" alt="Pinterest" width="24" height="24" />
+          </a>
+
+        </div>
       </div>
     </div>
+    <!-- Фото -->
+    <div class="contact-photo fade-left">
+      <picture>
+        <source srcset="./img/other/girl-desk.png 1x,
+                              ./img/other/girl-desk2x.png 2x" media="(min-width: 1200px)" />
+        <source srcset="./img/other/girl.png 1x,
+                              ./img/other/girl2x.png 2x" media="(min-width: 320px)" />
+        <img src="./img/other/girl-desk.png" alt="Girl illustration" class="girl-img" width="295" height="481"
+          loading="lazy" />
+      </picture>
+    </div>
+
   </div>
 </section>
