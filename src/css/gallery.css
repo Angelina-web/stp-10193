@@ -1,5 +1,6 @@
 .container-gallery {
-  padding: 40px 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .gallery-title {
   font-weight: 700;
@@ -30,8 +31,8 @@
   display: flex;
   align-items: center;
   gap: 8px;
-justify-content: center;
-width: 100%;
+  justify-content: center;
+  width: 100%;
 }
 
 .swiper-pagination-bullet {
@@ -71,7 +72,7 @@ width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .container-gallery {
-    padding: 40px 0 80px;
+    padding-bottom: 80px;
   }
   .gallery-title {
     margin-bottom: 64px;
@@ -79,7 +80,6 @@ width: 100%;
     line-height: 0.75;
   }
   .gallery-swiper {
-   
     padding-bottom: 56px;
   }
   .gallery-list {
