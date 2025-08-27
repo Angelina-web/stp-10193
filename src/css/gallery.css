@@ -10,7 +10,7 @@
   color: var(--color-text);
   margin-bottom: 24px;
 }
-.gallery-swiper {
+.js-gallery-swiper {
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -46,8 +46,8 @@
 .swiper-pagination-bullet-active {
   background: var(--color-pink-accent) !important;
 }
-.gallery-button-prev,
-.gallery-button-next {
+.js-gallery-button-prev,
+.js-gallery-button-next {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,8 +62,8 @@
   pointer-events: auto;
 }
 
-.gallery-button-prev svg,
-.gallery-button-next svg {
+.js-gallery-button-prev svg,
+.js-gallery-button-next svg {
   fill: var(--color-text);
 }
 .is-hidden {
@@ -78,7 +78,7 @@
     font-size: 40px;
     line-height: 0.75;
   }
-  .gallery-swiper {
+  .js-gallery-swiper {
     padding-bottom: 56px;
   }
   .gallery-list {

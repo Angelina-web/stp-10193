@@ -1,21 +1,18 @@
 import Swiper from 'swiper';
-import {
-  Navigation,
-  Pagination,
-  Autoplay,
-} from 'swiper/modules';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-
 function initSwiper() {
-  const container = document.querySelector('.swiper.gallery-swiper');
+  const container = document.querySelector('.swiper.js-gallery-swiper');
   if (!container) return;
 
-  const nextEl = document.querySelector('.gallery-button-next');
-  const prevEl = document.querySelector('.gallery-button-prev');
-  const paginationEl = document.querySelector('.swiper-pagination');
+  const nextEl = document.querySelector('.js-gallery-button-next');
+  const prevEl = document.querySelector('.js-gallery-button-prev');
+  const paginationEl = document.querySelector(
+    '.swiper-pagination.js-gallery-pagination'
+  );
 
   const swiper = new Swiper(container, {
     modules: [Navigation, Pagination, Autoplay],
@@ -28,11 +25,11 @@ function initSwiper() {
     pagination: {
       el: paginationEl,
       clickable: true,
-      centered: true
+      centered: true,
     },
     navigation: { nextEl: nextEl, prevEl: prevEl },
     breakpoints: {
-      0: { slidesPerView: 1, spaceBetween: 16,  centeredSlides: true},
+      0: { slidesPerView: 1, spaceBetween: 16, centeredSlides: true },
       1200: { slidesPerView: 3, spaceBetween: 24, centeredSlides: true },
     },
     on: {
@@ -54,7 +51,6 @@ function toggleNav(sw, { nextEl, prevEl }) {
   if (isDesktop) {
     prevEl.classList.remove('is-hidden');
     nextEl.classList.remove('is-hidden');
-
   } else {
     prevEl.classList.add('is-hidden');
     nextEl.classList.add('is-hidden');
