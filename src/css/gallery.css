@@ -29,7 +29,7 @@
 }
 
 .swiper-pagination {
-  position: static;
+  position:absolute;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -37,12 +37,13 @@
   gap: 8px;
   align-items: center;
   z-index: 10;
+  
 }
 .swiper-pagination-bullet {
   background: #ffffff;
   opacity: 1;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
 }
 
