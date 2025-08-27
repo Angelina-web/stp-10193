@@ -59,10 +59,13 @@
   margin-bottom: 46px;
 }
 .social-icons {
-  display: block;
+display: flex;
+  flex-direction: column; 
+  align-items: center;
 }
 .icons-soc {
   display: flex;
+   justify-content: center;
   padding: 12px;
   gap: 24px;
 }
@@ -133,6 +136,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 120px;
+    width: 419px;
   }
 
   .social-icons {

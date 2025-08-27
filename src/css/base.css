@@ -1,16 +1,21 @@
 html {
   scroll-behavior: smooth;
+   scroll-padding-top: 80px
 }
 
 section {
   scroll-margin-top: 80px; 
 }
 
-@media only screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
+  html {
+    scroll-padding-top: 160px; 
+  }
   section {
-    scroll-margin-top: 160px; 
+    scroll-margin-top: 160px;
   }
 }
+
 :root {
   /* font-family: Inter, Avenir, Helvetica, Arial, sans-serif; */
   font-family: 'DM Sans', sans-serif;

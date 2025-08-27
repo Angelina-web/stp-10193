@@ -45,7 +45,6 @@
 
 .swiper-pagination-bullet-active {
   background: var(--color-pink-accent) !important;
-  transform: scale(1.5);
 }
 .gallery-button-prev,
 .gallery-button-next {
