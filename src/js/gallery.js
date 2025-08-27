@@ -3,12 +3,11 @@ import {
   Navigation,
   Pagination,
   Autoplay,
-  EffectCoverflow,
 } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import 'swiper/css/effect-coverflow';
+
 
 function initSwiper() {
   const container = document.querySelector('.swiper.gallery-swiper');
@@ -18,73 +17,48 @@ function initSwiper() {
   const prevEl = document.querySelector('.gallery-button-prev');
   const paginationEl = document.querySelector('.swiper-pagination');
 
-  const slidesCount = container.querySelectorAll('.swiper-slide').length;
-  const isDesktop = window.innerWidth >= 1200;
-  const slidesPerView = isDesktop ? 3 : 1;
-
   const swiper = new Swiper(container, {
-    modules: [Navigation, Pagination, Autoplay, EffectCoverflow],
-    slidesPerView: slidesPerView,
-    spaceBetween: isDesktop ? 24 : 16,
-    observer: true,
-    observeParents: true,
+    modules: [Navigation, Pagination, Autoplay],
     loop: true,
-    effect: isDesktop ? 'coverflow' : 'slide',
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 250,
-      modifier: 1.5,
-      slideShadows: false,
-    },
+    speed: 600,
     autoplay: {
       delay: 4000,
       disableOnInteraction: false,
     },
-    speed: 800,
     pagination: {
       el: paginationEl,
       clickable: true,
     },
     navigation: { nextEl: nextEl, prevEl: prevEl },
     breakpoints: {
-      0: { slidesPerView: 1, spaceBetween: 18},
-      1200: { slidesPerView: 3, spaceBetween: 24 },
+      0: { slidesPerView: 1, spaceBetween: 16,  centeredSlides: true},
+      1200: { slidesPerView: 3, spaceBetween: 24, centeredSlides: true },
     },
     on: {
       init() {
-        toggleNav(this, { nextEl, prevEl, paginationEl });
+        toggleNav(this, { nextEl, prevEl });
       },
       resize() {
-        toggleNav(this, { nextEl, prevEl, paginationEl });
-      },
-      slideChange() {
-        toggleNav(this, { nextEl, prevEl, paginationEl });
+        toggleNav(this, { nextEl, prevEl });
       },
     },
     grabCursor: true,
-    centeredSlides: true,
   });
-  container.addEventListener('mouseenter', () => swiper.autoplay.stop());
-  container.addEventListener('mouseleave', () => swiper.autoplay.start());
 }
 
-function toggleNav(sw, { nextEl, prevEl, paginationEl }) {
-const total = sw.slides.length - sw.loopedSlides * 2;
-  const visible = Math.floor(sw.params.slidesPerView) || 1;
-  const hideAll = total <= visible;
+function toggleNav(sw, { nextEl, prevEl }) {
+  const isDesktop = sw.width >= 1200;
+  if (!nextEl || !prevEl) return;
 
-  if (prevEl && nextEl) {
-    if (hideAll) {
-      prevEl.classList.add('is-hidden');
-      nextEl.classList.add('is-hidden');
-    } else {
-      prevEl.classList.remove('is-hidden');
-      nextEl.classList.remove('is-hidden');
-      prevEl.classList.toggle('swiper-button-disabled', sw.isBeginning);
-      nextEl.classList.toggle('swiper-button-disabled', sw.isEnd);
-    }
+  if (isDesktop) {
+    prevEl.classList.remove('is-hidden');
+    nextEl.classList.remove('is-hidden');
+
+  } else {
+    prevEl.classList.add('is-hidden');
+    nextEl.classList.add('is-hidden');
   }
 }
+
 document.addEventListener('DOMContentLoaded', initSwiper);
 export default initSwiper;
