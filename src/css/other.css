@@ -4,7 +4,6 @@
   line-height: 1.5;
   color: var(--color-text);
   margin-bottom: 40px;
-  margin-top: 40px;
 }
 .text {
   font-weight: 600;
@@ -34,13 +33,11 @@
   color: var(--color-text);
 }
 
-
 @media screen and (min-width: 1200px) {
   .main-title {
     font-weight: 700;
     font-size: 40px;
     line-height: 0.75;
-    margin-top: 80px;
   }
   .text {
     font-weight: 400;
