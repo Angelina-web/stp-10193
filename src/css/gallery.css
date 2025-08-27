@@ -29,16 +29,13 @@
 }
 
 .swiper-pagination {
-  position:relative;
-  left: 50%;
-  transform: translateX(-50%);
+  position: static;
   display: flex;
-  justify-content: center;
+  align-items: center;
   gap: 8px;
   align-items: center;
-  z-index: 10;
-
 }
+
 .swiper-pagination-bullet {
   background: #ffffff;
   opacity: 1;
@@ -91,9 +88,9 @@
     font-size: 40px;
     line-height: 0.75;
   }
-.gallery-img {
-  max-width: 200px;
-}
+  .gallery-img {
+    max-width: 200px;
+  }
   .gallery-swiper {
     max-width: 848px;
     padding-bottom: 56px;
@@ -101,16 +98,14 @@
   .gallery-list {
     margin-bottom: 40px;
   }
-.swiper-slide {
-  transition: transform 0.4s ease;
-}
+  .swiper-slide {
+    transition: transform 0.4s ease;
+  }
   .swiper-slide-prev,
   .swiper-slide-next {
     transform: scale(0.6) !important;
   }
-    .swiper-slide-active  {
-      z-index: 2;
-    }
-
- 
+  .swiper-slide-active {
+    z-index: 2;
+  }
 }
