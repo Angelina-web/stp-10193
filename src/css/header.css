@@ -74,7 +74,7 @@
    box-sizing: border-box; 
 }
 
-.mobile-menu.open {
+.mobile-menu.js-open {
   transform: translateX(0);
 }
 

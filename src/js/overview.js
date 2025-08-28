@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        photo.classList.add('visible');
+        photo.classList.add('js-visible');
         observer.unobserve(photo);
       }
     });

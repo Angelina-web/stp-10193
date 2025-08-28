@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', () => {
   const categoryLinks = document.querySelectorAll('[data-category-link]');
   // Відкриття меню
   burgerBtn.addEventListener('click', () => {
-    mobileMenu.classList.add('open');
+    mobileMenu.classList.add('js-open');
   });
 
   // Закриття меню
   closeBtn.addEventListener('click', () => {
-    mobileMenu.classList.remove('open');
+    mobileMenu.classList.remove('js-open');
   });
   // Клік по категорії
   categoryLinks.forEach(link => {
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const targetSection = document.getElementById(targetId);
 
       if (targetSection) {
-        mobileMenu.classList.remove('open');
+        mobileMenu.classList.remove('js-open');
 
         // Миттєвий перехід до секції
         targetSection.setAttribute('tabindex', '-1');

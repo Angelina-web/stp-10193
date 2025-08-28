@@ -27,7 +27,7 @@
   transform: translateY(50px); /* виїжджає знизу */
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
-.js-owerview-img.visible {
+.js-owerview-img.js-visible {
   opacity: 1;
   transform: translateY(0);
 }

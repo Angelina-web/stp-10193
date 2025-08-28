@@ -49,11 +49,11 @@ function toggleNav(sw, { nextEl, prevEl }) {
   if (!nextEl || !prevEl) return;
 
   if (isDesktop) {
-    prevEl.classList.remove('is-hidden');
-    nextEl.classList.remove('is-hidden');
+    prevEl.classList.remove('js-is-hidden');
+    nextEl.classList.remove('js-is-hidden');
   } else {
-    prevEl.classList.add('is-hidden');
-    nextEl.classList.add('is-hidden');
+    prevEl.classList.add('js-is-hidden');
+    nextEl.classList.add('js-is-hidden');
   }
 }
 
