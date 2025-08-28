@@ -2,15 +2,15 @@ import Accordion from 'accordion-js';
 
 new Accordion('.js-accordion-container', {
   duration: 400,
-  triggerClass: 'js-ac-trigger',
-  panelClass: 'js-ac-panel',
+  triggerClass: 'ac-trigger',
+  panelClass: 'ac-panel',
   activeClass: 'js-is-active',
   showMultiple: true,
   heightStyle: 'content',
 });
-document.querySelectorAll('.js-ac').forEach(ac => {
-  const trigger = ac.querySelector('.js-ac-trigger');
-  const panel = ac.querySelector('.js-ac-panel');
+document.querySelectorAll('.ac').forEach(ac => {
+  const trigger = ac.querySelector('.ac-trigger');
+  const panel = ac.querySelector('.ac-panel');
 
   trigger.addEventListener('click', () => {
     if (ac.classList.contains('js-is-active')) {
