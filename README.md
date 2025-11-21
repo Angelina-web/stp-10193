@@ -56,4 +56,4 @@ and desktop**.
 
 ## 📸 Screenshot
 
-![Project Screenshot](./img/game.png)
+![Project Screenshot](./src/img/game.png)
